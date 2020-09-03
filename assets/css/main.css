@@ -1292,11 +1292,11 @@ ul {
         padding-top: 0; }
 
 dl {
-  margin: 0 0 2em 0; }
+  margin: 0 0 0 0; }
   dl dt {
     display: block;
     font-weight: 600;
-    margin: 0 0 1em 0; }
+    margin: 0 0 0 0; }
   dl dd {
     margin-left: 2em; }
 
