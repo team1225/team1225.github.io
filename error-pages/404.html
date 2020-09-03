@@ -217,22 +217,24 @@
   <body class="plain error-page-wrapper background-color background-image">
     <div class="content-container">
 	<div class="head-line secondary-text-color">
-		503
+		404
 	</div>
 	<div class="subheader primary-text-color">
-		Looks like we're having <br>
-		some server issues.
+		The page or resource <br>you're
+		looking for does not exist.
 	</div>
-    <hr>
-    <div class="clearfix"></div>
-    <div class="context primary-text-color">
-      
-    <p>Our status page is currently reporting a status of <strong id="replace-with-fetched-data"><em>fetching from status page...</em></strong>.</p>
-
-
-    </div>
+	<hr>
+	<div class="clearfix"></div>
+	<div class="context primary-text-color">
+		<!-- doesn't use context_content because it's ALWAYS the same thing -->
+    <p>
+      Please check the website URL and try again.<br />
+      If you think something is broken, report a problem.
+    </p>
+	  <p>Our status page is currently reporting a status of <br><strong id="replace-with-fetched-data"><em>fetching from status page...</em></strong>.</p>
+	</div>
 	<div class="buttons-container">
-		  <a class="border-button" href="https://team1225.statuspage.io" target="_blank">View Statuspage</a>
+		<a class="border-button" href="http://team1225.com" target="_blank">Go to homepage</a>
 		<a class="border-button" href="mailto:itadmin@team1225.com" target="_blank">Report a problem</a>
 	</div>
 </div>
@@ -342,7 +344,7 @@
        });
 
      };
-     var ep = new ErrorPage('body', "503", "plain");
+     var ep = new ErrorPage('body', "404", "plain");
      ep.initialize();
 
      // hack to make sure content stays centered >_<
@@ -350,9 +352,6 @@
        $('body').trigger('resize')
      });
 
-     $(function () {
-       ep.fetchStatus("https://mg1yr6ksf8yy.statuspage.io", "503");
-     });
     </script>
 
     
