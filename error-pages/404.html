@@ -220,21 +220,20 @@
 		404
 	</div>
 	<div class="subheader primary-text-color">
-		Oops, the page you're <br>
-		looking for does not exist.
+		The page or resource you're looking for cannot be found.
 	</div>
-	<hr>
-	<div class="clearfix"></div>
-	<div class="context primary-text-color">
-		<!-- doesn't use context_content because it's ALWAYS the same thing -->
-    <p>
-      You may want to head back to the homepage.<br />
-      If you think something is broken, report a problem.
-    </p>
-	</div>
+    <hr>
+    <div class="clearfix"></div>
+    <div class="context primary-text-color">
+      
+    <p>Please check the website URL and try again. <br>
+		System Status: <strong id="replace-with-fetched-data"><em> loading system status....</em></strong>.</p>
+
+
+    </div>
 	<div class="buttons-container">
-		<a class="border-button" href="http://team1225.com" target="_blank">Go to homepage</a>
-		<a class="border-button" href="mailto:itadmin@team1225.com" target="_blank">Report a problem</a>
+		  <a class="border-button" href="index.html">Go to Homepage</a>
+		<a class="border-button" href="https://forms.monday.com/forms/de2042bf0e47ae758ed7a91913fde6dc" target="_blank">Report a problem</a>
 	</div>
 </div>
 
@@ -343,7 +342,7 @@
        });
 
      };
-     var ep = new ErrorPage('body', "404", "plain");
+     var ep = new ErrorPage('body', "503", "plain");
      ep.initialize();
 
      // hack to make sure content stays centered >_<
@@ -351,6 +350,9 @@
        $('body').trigger('resize')
      });
 
+     $(function () {
+       ep.fetchStatus("https://mg1yr6ksf8yy.statuspage.io", "503");
+     });
     </script>
 
     
