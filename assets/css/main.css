@@ -114,6 +114,7 @@ a {
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
   color: #8cc125;
+  font-family: 'Montserrat';
   text-decoration: none; }
   a:hover {
     border-bottom-color: #8cc125;
@@ -2227,6 +2228,7 @@ button,
     cursor: pointer;
     display: block;
     font-size: 0.9em;
+	font-family: 'Montserrat';
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
       color: #7e4cd1; }
@@ -2247,7 +2249,7 @@ button,
         text-rendering: auto;
         line-height: 1;
         text-transform: none !important;
-        font-family: 'Font Awesome 5 Free';
+        font-family: 'Montserrat';
         font-weight: 900; }
       #menu ul a.opener:before, #menu ul span.opener:before {
         -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
