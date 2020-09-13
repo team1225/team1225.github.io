@@ -151,7 +151,8 @@ h1 {
   line-height: 1.3; }
 
 h2 {
-  font-family: "Montserrat SemiBold";
+  font-family: 'Montserrat';
+  font-weight: 700;
   font-size: 1.75em; }
 
 h3 {
