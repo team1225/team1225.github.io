@@ -1260,6 +1260,12 @@ input[type="radio"] + label:before {
     width: 100%; }
     .image.main img {
       width: 100%; }
+  .image.sponsor {
+    display: block;
+    margin: 2em 0 2em 0;
+    width: 100%; }
+    .image.sponsor img {
+      width: 100%; }
 
 a.image {
   overflow: hidden; }
@@ -1510,7 +1516,7 @@ button,
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: transparent;
-  border-radius: 0.375em;
+  border-radius: 99px;
   border: 0;
   box-shadow: inset 0 0 0 2px #8cc125;
   color: #8cc125 !important;
