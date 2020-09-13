@@ -2221,7 +2221,7 @@ button,
   list-style: none;
   margin-bottom: 0;
   padding: 0;
-  text-transform: uppercase; }
+   }
   #menu ul a, #menu ul span {
     border-bottom: 0;
     color: inherit;
@@ -2249,7 +2249,7 @@ button,
         text-rendering: auto;
         line-height: 1;
         text-transform: none !important;
-        font-family: 'Montserrat';
+		font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
       #menu ul a.opener:before, #menu ul span.opener:before {
         -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
