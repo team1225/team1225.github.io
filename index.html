@@ -11,7 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/cc/w3.css">
+		<link rel="stylesheet" href="assets/css/w3.css">
 		<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Basic&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 	</head>
@@ -47,12 +47,27 @@
 										</ul>
 									</div>
 									<span class="image object">
-										<img class="mySlides w3-animate fading" src="images/1225_2020_TeamPhoto.jpg" alt="" />
-										<!-- <img class="mySlides w3-animate fading" src="images/1225_2020_TeamPhoto-2.jpg" alt="" />
-										<img class="mySlides w3-animate fading" src="images/1225_2019_TeamPhoto.jpg" alt="" />
-										<img class="mySlides w3-animate fading" src="images/1225_2015_TeamPhoto.jpg" alt="" />
-										<img class="mySlides w3-animate fading" src="images/1225_2008_TeamPhoto.jpg" alt="" /> -->
+										<img class="mySlides w3-animate" src="images/index-fading/1.jpg" alt="" />
+										<img class="mySlides w3-animate-right" src="images/index-fading/2.jpg" alt="" />
+										<img class="mySlides w3-animate-right" src="images/index-fading/3.jpg" alt="" />
+										<img class="mySlides w3-animate-right" src="images/index-fading/4.jpg" alt="" />
 									</span>
+									<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 6000); // Change image every 6 seconds
+}
+									</script>
 								</section>
 
 							<!-- Section 1a -->
