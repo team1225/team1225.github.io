@@ -1,7 +1,8 @@
 /*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Team 1225, The Gorillas
+	© 2020 by Henderson County Robotics Team 1225, The Gorillas
+	Created and Designed by Joey Stills
+	Version: 1.1
 */
 
 (function($) {
@@ -258,5 +259,15 @@
 				});
 
 			});
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 5000);
 
 })(jQuery);
