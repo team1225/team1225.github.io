@@ -2341,3 +2341,10 @@ height: 100%;
   right: 10px;
   bottom: 10px;
 }
+
+.center-icon-tvd {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+}
