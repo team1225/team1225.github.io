@@ -2242,6 +2242,8 @@ button,
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
       color: #7e4cd1; }
+		a:active {
+  			color: #8cc125; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
