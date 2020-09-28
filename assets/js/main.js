@@ -271,10 +271,15 @@ setInterval(function() {
 }, 5000);
 
 })(jQuery);
+
+//New Code Start
 // Open external links in a popup modal notice
 $(window).on('load', function(){
 	
-	$.expr[":"].external = function(a) {		
+	$.expr[":"].external = function(a) {
+		//var linkHref = a.hostname;
+		//var domainHref = location.hostname;
+		
 		var linkhn = a.hostname.split('.').reverse();
 		var linkHref = linkhn[1] + "." + linkhn[0];
 		
@@ -289,7 +294,7 @@ $(window).on('load', function(){
 	$(function() {
 		
 		$('a.ext_link').click(function() {
-			// open a modal 
+			 // open a modal 
 			$('a:external').attr('data-toggle', 'modal');
 			$('a:external').attr('data-target', '#speedbump');
 			//go to link on modal close
