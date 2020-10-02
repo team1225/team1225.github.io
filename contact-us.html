@@ -4,7 +4,7 @@
 	Team 1225, The Gorillas
 	© 2020 by Henderson County Robotics Team 1225, The Gorillas
 	Created and Designed by Joey Stills
-	Page Version 2.0
+	Page Version 2.3
 -->
 	<head>
 		<title>Contact Us - FRC Team 1225</title>
@@ -19,6 +19,16 @@
 		<meta property="og:description" content="Team 1225 is currently 3D-Printing emergency medical supplies for the COVID-19 Crisis. We have suspended regular meetings at this time.">
 		<meta property="og:image" content="https://www.team1225.com/images/1225_2020_SocialShare_Cover_Design.png">
 		<meta property="og:url" content="https://www.team1225.com/contact-us">
+		<script>
+window.onload = function() {
+  var recaptcha = document.forms["myForm"]["g-recaptcha-response"];
+  recaptcha.required = true;
+  recaptcha.oninvalid = function(e) {
+    // do something
+    alert("Please complete the captcha");
+  }
+}
+</script>
 	</head>
 	<body class="is-preload">
 
