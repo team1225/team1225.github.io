@@ -21,14 +21,9 @@
 		<meta property="og:url" content="https://www.team1225.com/contact-us">
 
 <script>
-window.onload = function() {
-  var recaptcha = document.forms["myForm"]["g-recaptcha-response"];
-  recaptcha.required = true;
-  recaptcha.oninvalid = function(e) {
-    // do something
-    alert("Please complete the captcha");
-  }
-}
+    function enableBtn(){
+        document.getElementById("submit_details").disabled = false;
+    }
 </script>
 
 	</head>
@@ -70,10 +65,10 @@ window.onload = function() {
 											<div class="col-6 col-12-xsmall">
 												<input type="email" name="q6_email" id="input_6" value="" placeholder="Email *" required/>
 											</div>
-											<div class="col-9 col-12-xsmall">
+											<div class="col-6 col-12-xsmall">
 												<input type="text" name="q4_messageSubject" id="input_4" value="" placeholder="Subject *" required/>
 											</div>
-											<div class="col-3 col-3-xsmall">
+											<div class="col-6 col-12-xsmall">
 												<input type="tel" name="q5_teamNumber" id="input_5" value="" placeholder="Team Number"/>
 											</div>
 											<div class="col-12">
@@ -81,11 +76,12 @@ window.onload = function() {
 											</div>
 											
 											<div class="col-12">
-												<ul class="actions">
-													<li><button type="submit" class="primary g-recaptcha" data-sitekey="6LfFDdMZAAAAAA4GPYH3-JCznYjQCM5qn81yIwNO" data-callback="onSubmit">Submit</button></li>
-													
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
+											<div class="g-recaptcha primary" data-sitekey="YOUR_KEY" data-callback="enableBtn"></div>
+												<br>
+											<ul class="actions">
+												<li><button class=primary type="submit" id="submit_details" disabled>Submit</button></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
 											</div>
 										</div>
 									</form>
