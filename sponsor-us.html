@@ -4,7 +4,7 @@
 	Team 1225, The Gorillas
 	© 2020 by Henderson County Robotics Team 1225, The Gorillas
 	Created and Designed by Joey Stills
-	Page Version 2.6
+	Page Version 3.1
 -->
 	<head>
 		<title>Sponsor Us - FRC Team 1225</title>
@@ -19,6 +19,11 @@
 		<meta property="og:description" content="Intrested in sponsoring Team 1225? This page has all the details you need.">
 		<meta property="og:image" content="https://www.team1225.com/images/1225_2020_SocialShare_Cover_Design.png">
 		<meta property="og:url" content="https://www.team1225.com/sponsor-us">
+<script>
+    function enableBtn(){
+        document.getElementById("submit_details").disabled = false;
+    }
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -101,10 +106,12 @@
 											</div>
 											
 											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Submit" class="primary" /></li>
-													<li><input type="reset" value="Clear Form" /></li>
-												</ul>
+											<div class="g-recaptcha primary" data-sitekey="6LdzHdMZAAAAAHlGF8MBqP3JXySie5VI6WD7m5n1" data-callback="enableBtn"></div>
+												<br>
+											<ul class="actions">
+												<li><button class="primary" type="submit" id="submit_details" disabled>Submit</button></li>
+												<li><input type="reset" value="Clear Form" /></li>
+											</ul>
 											</div>
 										</div>
 									</form>
