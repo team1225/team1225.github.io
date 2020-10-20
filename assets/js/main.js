@@ -284,12 +284,12 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => {
         // if it's light -> go dark
         if(themeStylesheet.href.includes('light')){
-            themeStylesheet.href = '/assets/css/main-dark.css';
-            themeToggle.innerText = 'Switch to light mode';
+            themeStylesheet.href = 'assets/css/main-dark.css';
+            themeToggle.innerText = 'Light mode';
         } else {
             // if it's dark -> go light
-            themeStylesheet.href = '/assets/css/main-light.css';
-            themeToggle.innerText = 'Switch to dark mode';
+            themeStylesheet.href = 'assets/css/main-light.css';
+            themeToggle.innerText = 'Dark mode';
         }
         // save the preference to localStorage
         localStorage.setItem('theme',themeStylesheet.href)  

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Basic&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 /*
 	Team 1225, The Gorillas
-	Main CSS File - Light Mode
+	Main CSS File - Dark Mode
 	(C) 2020 by Henderson County Robotics Team 1225, The Gorillas
 */
 html, body, div, span, applet, object,
@@ -177,7 +177,7 @@ h7 {
 h8 {
   font-family: 'Montserrat';
   font-size: 1.75em;
-  color: #353535}
+  color: #f2f2f2}
 
 @media screen and (max-width: 1680px) {
   h1 {
@@ -1047,7 +1047,7 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: #ffffff;
+  background: #353535;
   border-radius: 0.375em;
   border: none;
   border: solid 1px rgba(210, 215, 217, 0.75);
@@ -1480,7 +1480,7 @@ table {
   table td {
     padding: 0.75em 0.75em; }
   table th {
-    color: #3d4449;
+    color: #f2f2f2;
     font-size: 0.9em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
@@ -2080,7 +2080,7 @@ button,
       text-indent: 7.25em;
       width: 7.25em; }
       #sidebar .toggle:before {
-        color: #7f888f;
+        color: #8cc125;
         margin-left: -0.0625em;
         margin-top: -0.25em;
         font-size: 1.1rem;
@@ -2224,7 +2224,7 @@ button,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #3d4449;
+  color: #8cc125;
   font-family: 'Montserrat Medium';
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -2240,7 +2240,7 @@ button,
 	font-family: 'Montserrat';
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #8cc125; }
+      color: #f2f2f2; }
 		a:active {
   			color: #8cc125; }
     #menu ul a.opener, #menu ul span.opener {
@@ -2267,7 +2267,7 @@ button,
         -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
         -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
         transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-        color: #9fa3a6;
+        color: #8cc125;
         content: '\f078';
         position: absolute;
         right: 0; }
@@ -2282,11 +2282,11 @@ button,
         transform: rotate(-180deg); }
 
 #menu > ul > li {
-  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  border-top: solid 1px rgba(255,255,255,0.30);
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0; }
   #menu > ul > li > ul {
-    color: #9fa3a6;
+    color: #8cc125;
     display: none;
     margin: 0.5em 0 1.5em 0;
     padding-left: 1em; }
