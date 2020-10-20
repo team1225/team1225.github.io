@@ -272,7 +272,6 @@ setInterval(function() {
 
 })(jQuery);
 
-<<<<<<< HEAD
 // this one is jut to wait for the page to load
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -296,5 +295,3 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme',themeStylesheet.href)  
     })
 })
-=======
->>>>>>> origin/master
