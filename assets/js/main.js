@@ -272,6 +272,9 @@ setInterval(function() {
 
 })(jQuery);
 
+
+
+
 // Dark Mode Code
 document.addEventListener('DOMContentLoaded', () => {
 
