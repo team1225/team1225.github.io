@@ -1,35 +1,9 @@
 /*
 	Team 1225, The Gorillas
 	© 2020 by Henderson County Robotics Team 1225, The Gorillas
-	Designed by Joey Stills, External Code used from HTML5UP.net
-	Version: 2.3
+	Created and Designed by Joey Stills
+	Version: 2.2
 */
-
-
-// this one is jut to wait for the page to load
-document.addEventListener('DOMContentLoaded', () => {
-
-    const themeStylesheet = document.getElementById('theme');
-    const storedTheme = localStorage.getItem('theme');
-    if(storedTheme){
-        themeStylesheet.href = storedTheme;
-    }
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', () => {
-        // if it's light -> go dark
-        if(themeStylesheet.href.includes('light')){
-            themeStylesheet.href = 'assets/css/main-dark.css';
-            themeToggle.innerText = 'Light mode';
-        } else {
-            // if it's dark -> go light
-            themeStylesheet.href = 'assets/css/main-light.css';
-            themeToggle.innerText = 'Dark mode';
-        }
-        // save the preference to localStorage
-        localStorage.setItem('theme',themeStylesheet.href)  
-    })
-})
-
 
 (function($) {
 
@@ -297,3 +271,27 @@ setInterval(function() {
 }, 5000);
 
 })(jQuery);
+
+// Dark Mode Code
+document.addEventListener('DOMContentLoaded', () => {
+
+    const themeStylesheet = document.getElementById('theme');
+    const storedTheme = localStorage.getItem('theme');
+    if(storedTheme){
+        themeStylesheet.href = storedTheme;
+    }
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        // if it's light -> go dark
+        if(themeStylesheet.href.includes('light')){
+            themeStylesheet.href = 'assets/css/main-dark.css';
+            themeToggle.innerText = 'Light mode';
+        } else {
+            // if it's dark -> go light
+            themeStylesheet.href = 'assets/css/main-light.css';
+            themeToggle.innerText = 'Dark mode';
+        }
+        // save the preference to localStorage
+        localStorage.setItem('theme',themeStylesheet.href)  
+    })
+})
