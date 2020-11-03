@@ -2412,3 +2412,31 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/*** Works on common browsers ***/
+::selection {
+    background-color: #8cc125;
+    color: #353535;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #8cc125;
+    color: #353535;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #8cc125;
+    color: #353535;
+}
+
+::-ms-selection {
+    background-color: #8cc125;
+    color: #353535;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #8cc125;
+    color: #353535;
+}
